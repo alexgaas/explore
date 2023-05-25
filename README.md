@@ -15,7 +15,6 @@ based on dynamic calculation of score. Please see explanation section for more d
 ### Build and Run
 
 ```BASH
-go build -o explore
 go run explore
 ```
 
@@ -185,3 +184,6 @@ Must use `rsdtsc` for x86/x64 (look this package here - https://github.com/dtere
 `cntvct_el0` for arm64 M1/M2 (discussion is here - https://stackoverflow.com/questions/40454157/is-there-an-equivalent-instruction-to-rdtsc-in-arm) 
 * Won't work for very small/fast functions very well. You need bottom border of function execution from 300ns to collect statistics correctly
 * No protection from `context switch` or `page fault`, in production-ready code the score from that function must be ignored
+
+### License
+MIT - https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt
