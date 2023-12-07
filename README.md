@@ -67,7 +67,12 @@ Number of iterations 16256
 | zlib_5               |                 24736 |
 | zstd_3               |                  8463 |
 +----------------------+-----------------------+
+```
+_As plot for better visibility:_
 
+<img src="./plots/Compression_Mode_Score.png">
+
+```
 +------------------+-----------------------+----------------------+-----------------+
 | SELECTED (BEST)  | SELECTED (BEST) SCORE | EXPLORED             |  EXPLORED SCORE |
 | COMPRESSION MODE |       (RUNTIME IN ΜS) | COMPRESSION MODE     | (RUNTIME IN ΜS) |
@@ -149,6 +154,9 @@ Number of iterations 16256
 | snappy           |                  2500 | zstd_3               |            8791 |
 +------------------+-----------------------+----------------------+-----------------+
 ```
+_As plot for better visibility:_
+
+<img src="./plots/Exploration_Mode.png">
 
 ### Testing
 Please look into `config/config.go` to observe all options to start program. You can apply following flags:
